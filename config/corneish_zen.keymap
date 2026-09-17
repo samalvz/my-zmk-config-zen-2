@@ -40,8 +40,8 @@
             >;
         };
 
-        lower_layer {
-            label = "RAISE";
+        ONE {
+            label = "1";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -57,8 +57,8 @@
             >;
         };
 
-        raise_layer {
-            label = "LOWER";
+        TWO {
+            label = "2";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -67,15 +67,15 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F1     &kp F2     &kp F3           &kp F4      &kp F5    &kp F6       &kp F7        &kp F8    &kp F9    &kp F10  &kp F11    &kp F12
-&kp GRAVE  &kp TILDE  &kp PRINTSCREEN  &kp INS     &kp HOME  &kp PG_UP    &none         &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &none
-&kp LSHFT  &none      &none            &kp DELETE  &kp END   &kp PG_DN    &kp KP_SLASH  &none     &none     &none    &none      &none
-                                       &kp LALT    &mo 3     &kp SPACE    &kp ENTER     &mo 2     &none
+&kp F1     &kp F2     &kp F3           &kp F4      &kp F5    &kp F6       &kp F7     &kp F8    &kp F9    &kp F10  &kp F11    &kp F12
+&kp GRAVE  &kp TILDE  &kp PRINTSCREEN  &kp INS     &kp HOME  &kp PG_UP    &none      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &none
+&kp LSHFT  &none      &none            &kp DELETE  &kp END   &kp PG_DN    &kp F17    &kp F18   &kp F19   &kp F20  &kp F21    &kp F22
+                                       &kp LALT    &mo 3     &kp SPACE    &kp ENTER  &mo 2     &none
             >;
         };
 
-        adjust_layer {
-            label = "ADJUST";
+        THREE {
+            label = "3";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -84,10 +84,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp K_COFFEE   &none           &none  &none     &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3       &none  &kp C_PLAY_PAUSE  &kp C_BRIGHTNESS_MAXIMUM  &kp C_MUTE
-&bt BT_CLR     &kp LG(LC(D))   &none  &none     &kp LG(LS(LEFT))  &none           &none         &kp LG(LS(RIGHT))  &none  &kp C_NEXT        &kp C_BRIGHTNESS_INC      &kp C_VOLUME_UP
-&kp LC(LS(T))  &kp LG(LC(F4))  &none  &none     &kp LC(LS(TAB))   &none           &none         &kp LC(TAB)        &none  &kp C_PREVIOUS    &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN
-                                      &kp LALT  &mo 3             &kp SPACE       &kp RET       &mo 3              &none
+&kp K_COFFEE   &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9  &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4    &kp C_PLAY_PAUSE  &kp C_BRIGHTNESS_MAXIMUM  &kp C_MUTE
+&bt BT_CLR     &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp LG(LC(LEFT))  &none           &none         &kp LG(LC(RIGHT))  &kp LG(LC(D))   &kp C_NEXT        &kp C_BRIGHTNESS_INC      &kp C_VOLUME_UP
+&kp LC(LS(T))  &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp LC(LS(TAB))   &none           &none         &kp LC(TAB)        &kp LG(LC(F4))  &kp C_PREVIOUS    &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN
+                                           &kp LALT   &mo 3             &kp SPACE       &kp RET       &mo 3              &none
             >;
         };
     };
